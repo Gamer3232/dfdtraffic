@@ -39,17 +39,17 @@
     /*
       The embedded ctroads.org page is presumably sized at something like
       800×600 or 640×480. We set a base size and then scale it.
-      Adjust these values and the scale factor until the white margins are minimal.
+      Increase or decrease "width"/"height" and "scale" until you like the fit.
     */
     .camera iframe {
       position: absolute;
       top: 0;
       left: 0;
-      width: 800px;   /* approximate "natural" width of the embedded camera page */
-      height: 600px;  /* approximate "natural" height of the embedded camera page */
+      width: 800px;    /* approximate "natural" width of the embedded camera page */
+      height: 600px;   /* approximate "natural" height of the embedded camera page */
       border: none;
       transform-origin: 0 0;  /* anchor the scale at the top-left corner */
-      transform: scale(1.7);  /* increase or decrease this until you like the fit */
+      transform: scale(1.1);  /* try 1.7; adjust as needed */
     }
   </style>
 
@@ -97,3 +97,4 @@
   </div>
 </body>
 </html>
+
